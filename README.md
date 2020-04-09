@@ -21,5 +21,5 @@
 ![Linux 负载配置](https://pic.downk.cc/item/5e8ec360504f4bcb04184b37.png)
 
 ## Mongo 集群配置
-由于只有一台主机，并且mongo并不适合做 m-s，所以做了一个副本集,启动脚本在 mongoSehll/run
+由于只有一台主机，并且mongo并不适合做 m-s，所以做了一个副本集,启动脚本在 mongoSehll/run     
 [资料来源](https://www.jianshu.com/p/2825a66d6aed)
