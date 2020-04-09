@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# Mongo 集群副本集启动脚本
+# 适用含mongod环境的系统。
+mongod --port 9901 --dbpath ./d-1 --replSet rs0 2>&1 > ./mongo1 &
+mongod --port 9902 --dbpath ./d-2 --replSet rs0 2>&1 > ./mongo2 &
+mongod --port 9903 --dbpath ./d-3 --replSet rs0 2>&1 > ./mongo3 &
+
+
