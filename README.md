@@ -23,3 +23,8 @@
 ## Mongo 集群配置
 由于只有一台主机，并且mongo并不适合做 m-s，所以做了一个副本集,启动脚本在 mongoSehll/run     
 [资料来源](https://www.jianshu.com/p/2825a66d6aed)
+
+# 问题
+1. 服务器端没做参数校验
+2. Mongo 链接池及链接管理
+3. 前端页面布局、弹窗、资源参数调整
