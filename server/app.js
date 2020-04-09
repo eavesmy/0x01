@@ -57,13 +57,13 @@ app.use((req, res, next) => {
     next();
 });
 
-router.post("/list",AssertsHandler.GetList);
-router.post("/del",AssertsHandler.Del);
-router.post("/upload",AssertsHandler.Upload);
-router.post("/preview",AssertsHandler.Preview);
+router.post("/api/list",AssertsHandler.GetList);
+router.post("/api/del",AssertsHandler.Del);
+router.post("/api/upload",AssertsHandler.Upload);
+router.post("/api/preview",AssertsHandler.Preview);
 
 app.use(router);
 
-const PORT = 7001;
-console.log("service start at  " + 7001)
+const PORT = process.env.PORT;
+console.log("service start at  " + PORT)
 app.listen(PORT);

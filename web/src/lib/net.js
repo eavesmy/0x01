@@ -1,4 +1,4 @@
-const HOST = "http://127.0.0.1:7001";
+const HOST = "http://eva7base.com:98";
 
 // TODO: 放入 localstroage 或 cookie
 let TOKEN = "";

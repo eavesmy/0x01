@@ -10,7 +10,7 @@ const {
 
 const Assert = require("../model/Asserts")(mongoose);
 const Mongo = NewConnect();
-const DISK_PATH = "/Users/eavesmy/Documents/tt/imgs/"
+const DISK_PATH = "/data/downloads/"
 
 exports.GetList = async (req, res) => {
         let data = await Assert.find({});
@@ -36,8 +36,11 @@ exports.Preview = (req, res) => {
         Assert.findById(id,(err,ret) => {
             if(!!err || !ret) res.error("出了一点问题，请稍后再试");
             // TODO: 换成下载服务器地址
-             // let data = fs.readFileSync(ret.path);
-            res.callback({name: ret.name,type: ret.type,path: ret.path});
+             let path = "http://eva7base.com:88/"
+             let arr_str = ret.path.split("/");
+             let uuid = arr_str[arr_str.length - 1];
+             path += uuid;
+            res.callback({name: ret.name,type: ret.type,path});
         });
 }
 

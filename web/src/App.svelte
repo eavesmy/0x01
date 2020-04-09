@@ -7,10 +7,10 @@
     const Titles = [ "预览", "名称", "大小", "类型","最后修改时间", "路径", "操作"];
 
     const Paths = {
-        ASSERT_LIST : "/list",
-        ASSERT_DEL: "/del",
-        ASSERT_UPLOAD: "/upload",
-        ASSERT_PREVIEW: "/preview"
+        ASSERT_LIST : "/api/list",
+        ASSERT_DEL: "/api/del",
+        ASSERT_UPLOAD: "/api/upload",
+        ASSERT_PREVIEW: "/api/preview"
     };
 
     let uploadBtn;
